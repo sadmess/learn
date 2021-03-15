@@ -7,7 +7,7 @@
 
 #### 驱动加载
 因为自己写的驱动没有签名，因此只能用非正常手段加载驱动
-这里我用了一个开源项目，kdmapper （论坛上就偷偷贴个链接[https://github.com/z175/kdmapper](https://github.com/z175/kdmapper)
+这里我用了一个开源项目，kdmapper （贴个链接[https://github.com/z175/kdmapper](https://github.com/z175/kdmapper)
 它主要利用一个驱动iqvw64e.sys :读写 user/kernel 内存, 映射物理内存，将虚拟内存转换为物理内存
 将驱动程序映射到内核中，随后调用其entry，但无法传递有效参数，需要在驱动中另作处理
 
